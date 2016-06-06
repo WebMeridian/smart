@@ -2,7 +2,7 @@
 $installer = $this;
 $installer->startSetup();
 
-$installer->run("CREATE TABLE IF NOT EXISTS `peexl_customflatrate` (
+$installer->run("CREATE TABLE IF NOT EXISTS `smart_customflatrate` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `active` int(10) DEFAULT 0,
   `title` varchar(250) DEFAULT NULL,
