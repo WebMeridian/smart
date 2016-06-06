@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+	<modules>
+		<Smart_Customflatrate>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Smart_Customflatrate>
+	</modules>
+</config>

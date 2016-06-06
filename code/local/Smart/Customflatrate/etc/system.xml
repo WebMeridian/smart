@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+    <config>
+        <sections>
+                <carriers translate="label" model="shipping">
+                <label>Shipping Methods</label>
+                <tab>sales</tab>
+                <frontend_type>text</frontend_type>
+                <sort_order>330</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+                <groups>
+                    <flatrate translate="label">
+                             <label>Flat Rate 1</label>
+                                             <sort_order>100</sort_order>
+                                             <fields>
+                                                    <infotext translate="label">
+                                <label>Info Text (supports HTML)</label>
+                                <frontend_type>editor</frontend_type>
+                                <sort_order>90</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+                            </infotext>
+                                            </fields>
+                    </flatrate>
+                    <customflatrate/>
+
+                        </groups>
+                </carriers>
+    </sections>
+</config>

@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+
+<config>
+    <start_url>customflatrateadmin/adminhtml_customflatrate/index</start_url>
+    <page>
+        <number>1</number>
+        <url>customflatrateadmin/adminhtml_customflatrate/index</url>
+        <button>
+            <name>add</name>
+            <data-step>1</data-step>
+            <data-intro>Step 1</data-intro>
+        </button>
+        <grid>
+            <customflatrateGrid>
+                <data-step>2</data-step>
+                <data-intro>Step 2</data-intro>
+                <row>
+                    <number>2</number>
+                    <data-step>3</data-step>
+                    <data-intro>Step 3</data-intro>
+                </row>
+            </customflatrateGrid>
+        </grid>
+    </page>
+    <page>
+        <number>2</number>
+        <url>customflatrateadmin/adminhtml_customflatrate/new</url>  
+        <forms>
+            <edit_form>
+                <fieldsets>
+                    <customflatrate_form>
+                        <data-step>1</data-step>
+                        <data-intro>Step 1</data-intro>
+                        <item>
+                            <name>active</name>
+                            <data-step>2</data-step>
+                            <data-intro>Step 2</data-intro>
+                        </item>
+                        <item>
+                            <name>title</name>
+                            <data-step>3</data-step>
+                            <data-intro>Step 3</data-intro>
+                        </item>
+                    </customflatrate_form>
+                    <customflatrate_form2>
+                        <data-step>4</data-step>
+                        <data-intro>Step 4</data-intro>
+                        <item>
+                            <name>sallowspecific</name>
+                            <data-step>5</data-step>
+                            <data-intro>Step 5</data-intro>
+                        </item>
+                        <item>
+                            <name>sort</name>
+                            <data-step>6</data-step>
+                            <data-intro>Step 6</data-intro>
+                        </item>
+                    </customflatrate_form2>
+                </fieldsets>
+            </edit_form>
+        </forms>
+    </page>
+    <page>
+        <number>3</number>
+        <url>adminhtml/cms_page/new</url>
+        <tabs>
+            <page_tabs_main_section>
+                <base_fieldset/>  
+                <page_title/>
+                <page_identifier/>                              
+            </page_tabs_main_section>
+            <page_tabs_content_section>
+                <content_fieldset/>
+                <page_content_heading/>                
+            </page_tabs_content_section> 
+            <page_tabs_design_section>
+                <layout_fieldset/>
+                <page_layout_update_xml/>
+            </page_tabs_design_section>           
+        </tabs>
+        <forms>
+            <edit_form>
+                <fieldsets>
+                    <base_fieldset>
+                        <data-step>1</data-step>
+                        <data-intro>Step 1</data-intro>
+                        <item>
+                            <name>title</name>
+                            <data-step>2</data-step>
+                            <data-intro>Step 2</data-intro>
+                        </item>
+                        <item>
+                            <name>identifier</name>
+                            <data-step>3</data-step>
+                            <data-intro>Step 3</data-intro>
+                        </item>
+                    </base_fieldset>
+                    <content_fieldset>
+                        <data-step>4</data-step>
+                        <data-intro>Step 4</data-intro>
+                        <item>                             
+                            <name>content_heading</name>
+                            <data-step>5</data-step>
+                            <data-intro>Step 5</data-intro>
+                        </item>
+                    </content_fieldset>
+                    <layout_fieldset>
+                        <data-step>6</data-step>
+                        <data-intro>Step 6</data-intro>
+                        <item>                             
+                            <name>layout_update_xml</name>
+                            <data-step>7</data-step>
+                            <data-intro>Step 7</data-intro>
+                        </item>
+                    </layout_fieldset>
+                </fieldsets>
+            </edit_form>
+        </forms>            
+    </page>
+    <page>
+        <number>4</number>
+        <url>adminhtml/system_config/edit/section/carriers</url>
+        <toogle>
+            <carriers_tablerate>
+                <data-step>1</data-step>
+                <data-intro>Step 1</data-intro>
+                <item>
+                    <name>carriers_tablerate_active</name>
+                    <data-step>2</data-step>
+                    <data-intro>Step 2</data-intro>
+                </item>
+                <item>
+                    <name>carriers_tablerate_title</name>
+                    <data-step>3</data-step>
+                    <data-intro>Step 3</data-intro>
+                </item>  
+            </carriers_tablerate>
+            <carriers_freeshipping>
+                <data-step>4</data-step>
+                <data-intro>Step 4</data-intro>
+                <item>
+                    <name>carriers_freeshipping_free_shipping_subtotal</name>
+                    <data-step>5</data-step>
+                    <data-intro>Step 5</data-intro>
+                </item>
+                <item>
+                    <name>carriers_freeshipping_specificerrmsg</name>
+                    <data-step>6</data-step>
+                    <data-intro>Step 6</data-intro>
+                </item>  
+            </carriers_freeshipping>
+        </toogle>             
+    </page>
+    <page>
+        <number>5</number>
+        <url>adminhtml/catalog_category/index</url>
+        <tabs>
+            <category_info_tabs_group_4>
+                <fieldset_group_4/>
+                <group_4name/>
+                <group_4is_active/>
+            </category_info_tabs_group_4>
+            <category_info_tabs_group_5>
+                <fieldset_group_5/>
+                <group_5display_mode/>
+                <group_5landing_page/>
+            </category_info_tabs_group_5>
+        </tabs>
+        <forms>
+            <edit_form>
+                <fieldsets>
+                    <fieldset_group_4>
+                        <data-step>1</data-step>
+                        <data-intro>Step 1</data-intro>
+                        <item>
+                            <name>name</name>
+                            <data-step>2</data-step>
+                            <data-intro>Step 2</data-intro>
+                        </item>
+                        <item>
+                            <name>is_active</name>
+                            <data-step>3</data-step>
+                            <data-intro>Step 3</data-intro>
+                        </item>
+                    </fieldset_group_4>
+                    <fieldset_group_5>
+                        <data-step>4</data-step>
+                        <data-intro>Step 4</data-intro>
+                        <item>
+                            <name>display_mode</name>
+                            <data-step>5</data-step>
+                            <data-intro>Step 5</data-intro>
+                        </item>
+                        <item>
+                            <name>landing_page</name>
+                            <data-step>6</data-step>
+                            <data-intro>Step 6</data-intro>
+                        </item>
+                    </fieldset_group_5>
+                </fieldsets>    
+           </edit_form>
+        </forms>       
+    </page>   
+</config>

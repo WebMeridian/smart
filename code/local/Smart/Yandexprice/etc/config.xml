@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Smart
+ * @package    Smart
+ * @copyright  Copyright (c) 2012 Smart Web Development (http://www.peexl.com)
+ * @license    http://framework.zend.com/license/new-bsd    New BSD License
+ * @version    1.0.8
+ */
+-->
+
+<config>
+    <modules>
+        <Smart_Yandexprice>
+            <version>0.0.1</version>
+        </Smart_Yandexprice>
+    </modules>
+
+    <adminhtml>
+        <menu>
+            <yandexprice>
+                <title>Yandex Price</title>
+                <action>yandexprice/adminhtml_yandexprice/index</action>
+                <sort_order>90</sort_order>
+            </yandexprice>
+        </menu>
+        <layout>
+            <updates>
+                <yandexprice>
+                    <file>yandexprice.xml</file>
+                </yandexprice>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <admin>
+        <routers>
+            <yandexprice>
+                <use>admin</use>
+                <args>
+                    <module>Smart_Yandexprice</module>
+                    <frontName>yandexprice</frontName>
+                </args>
+            </yandexprice>
+        </routers>
+    </admin>
+
+    <global>
+        <blocks>
+            <yandexprice>
+                <class>Smart_Yandexprice_Block</class>
+            </yandexprice>
+        </blocks>
+        <helpers>
+            <yandexprice>
+                <class>Smart_Yandexprice_Helper</class>
+            </yandexprice>
+        </helpers>
+
+    </global>
+
+
+    <frontend>
+        <events>
+            <!--Event identifier-->
+            <catalog_block_product_list_collection>
+                <!--Scope where we declare all observers for current event-->
+                <observers>
+                    <!--unique id for our observer-->
+                    <peexl_product_collection_load_after>
+                        <!--observer type-->
+                        <type>singleton</type>
+                        <!--path to our observer (app/code/local/Atwix/Test/Model/Observer.php)-->
+                        <class>peexl_yandexprice/observer</class>
+                        <!--Method's Name-->
+                        <method>collectionLoadAfter</method>
+                    </peexl_product_collection_load_after>
+                </observers>
+            </catalog_block_product_list_collection>
+        </events>
+    </frontend>
+
+
+</config>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <importexportorders translate="title" module="importexportorders">
+                        <title>Import/Export Orders</title>
+                        <sort_order>85</sort_order>
+                    </importexportorders>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

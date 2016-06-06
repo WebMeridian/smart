@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * @category    Smart
+ * @package     Smart_Yandexprice
+ */
+-->
+<config>
+    <modules>
+        <Smart_Yandexprice>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Smart_Yandexprice>
+    </modules>
+</config>
